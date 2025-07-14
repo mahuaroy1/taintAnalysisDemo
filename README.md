@@ -3,15 +3,15 @@ LLVM based pass to track taints from source to sink
 
 Build LLVM using cmake or Visual Studio.
 
-// Run clang to generate file with .ll extension for testing pass manager
+Run clang to generate file with .ll extension for testing pass manager
 
 clang -O1 -S -emit-llvm test_taint.c -o test_taint.ll
 
-// Run opt with your pass 
+Next run opt with your pass 
 
 ./build/Debug/bin/opt.exe -disable-output test_taint.ll -passes=taintanalyze
 
-// Sample output
+Below is sample output
 
 Found taint source user_input in call instruction in function main
 

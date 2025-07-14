@@ -11,6 +11,7 @@ clang -O1 -S -emit-llvm test_taint.c -o test_taint.ll
 
 // Sample output
 Found taint source user_input in call instruction in function main
+
 [WARNING] Tainted variable  user_input reaching sink in call instruction in function main 
 
 

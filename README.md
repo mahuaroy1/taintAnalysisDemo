@@ -1,5 +1,6 @@
 # taintAnalysisDemo
 LLVM based pass to track taints from source to sink
+Build LLVM using cmake or Visual Studio.
 
 // Run clang to generate file with .ll extension for testing pass manager
 

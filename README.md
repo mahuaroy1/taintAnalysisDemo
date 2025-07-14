@@ -6,6 +6,7 @@ LLVM based pass to track taints from source to sink
 clang -O1 -S -emit-llvm test_taint.c -o test_taint.ll
 
 // Run opt with your pass 
+
 ./build/Debug/bin/opt.exe -disable-output test_taint.ll -passes=taintanalyze
 
 // Sample output
